@@ -1,0 +1,181 @@
+// := color
+@base1: #F0F4F9;
+@base2: #efefef;
+@base3: #c9cdd3;
+@gray: #b2bcd7;
+@blue-gray: #5c7191;
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  background: @base2;
+}
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { 
+	display: block; 
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; padding: 0;
+  color: #5B6675;
+  font-weight: 400;
+}
+a, ul, img, div, section, p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#wrapper {
+  #top-header-container {
+    display: block;
+    position: relative;
+    text-align: center;
+    background: white;
+    //box-shadow: 0 0px 2px 0 #7d92c3;
+    #top-header {
+      display: inline-block;
+      width: 1000px;
+      text-align: left;
+      #nav-logo {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        img {
+          display: inherit;
+          height: 35px;
+          margin: 5px 0;
+        }
+      }
+      nav {
+        display: block;
+        float: right;
+        ul {
+          li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: @blue-gray;
+            list-style-type: none;
+            cursor: pointer;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  header {
+    background: #3aa345;
+    text-align: center;
+      >.container {
+        display: inline-block;
+        width: 1000px;
+        text-align: left;
+        color: @base1;
+        font-size: 18px;
+        font-weight: 300;
+        // border-left: 1px solid white;
+        // border-right: 1px solid white;
+        >div {
+          display: inline-block;
+          min-height: 150px;
+          padding: 5px;
+          vertical-align: top;
+        }
+        #profile {
+          position: relative;
+          width: 239px;
+          padding: 10px 0;
+          background: #309334;
+          h2, h3 {
+            position: relative;
+            left: 10px;
+            text-align: left;
+            color: #c4fab5;
+          }
+          h3 {
+            color: #dcfbd3;
+          }
+          #profile-image {
+            display: inline-block;
+            position: relative;
+            left: 10px;
+            top: 5px;
+            height: 100px;
+            width: 100px;
+            background: url('https://farm4.staticflickr.com/3847/15306444231_8d9273b0c9_m.jpg') -80px -30px no-repeat;
+            border-radius: 1000px;
+          }
+        }
+        #message {
+          width: 589px;
+          padding: 10px;
+        }
+        #performance-btn {
+          width: 139px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  #main {
+    margin: 10px 0;
+    text-align: center;
+    h1 {
+      padding: 10px;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    >.container {
+      display: inline-block;
+      width: 1000px;
+      height: 450px;
+      text-align: left;
+      #wellness-plan {
+        display: inline-block;
+        width: 960px;
+        background: white;
+        box-shadow: 0 1px 1px 0px #d0d0d0;
+        >div { //in-progress AND start-new
+          display: inline-block;
+          width: 480px;
+          vertical-align: top;
+        }
+        .header { //for in-progress AND start-new
+          width: 100%;
+          background: #eaecf3;
+          h2 {
+            padding: 10px;
+            text-align: center;
+            font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+            color: #7e8191;
+          }
+        }
+        .body { //for in-progress AND start-new
+          height: 380px;
+          margin: 10px;
+          border: 1px solid gray;
+        }
+        #in-progress {
+
+        }
+        #start-new {
+
+        }
+      }
+      #wellness-plan-sidebar {
+        display: inline-block;
+        width: 19px;
+        height: 200px;
+        overflow: visible;
+        h3 {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}

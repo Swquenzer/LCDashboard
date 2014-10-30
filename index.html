@@ -8,21 +8,77 @@
   <meta name="author" content="Stephen Quenzer">
 
   <script src="dist/jquery-1.11.1.min.js"></script>
-  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet/less" type="text/css" href="css/default.less" />
+  <script src="dist/less.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 <body>
-	<nav>
-	</nav>
-	<header>
-	</header>
-	<section id="main">
-	</section>
-	<footer>
-	</footer>
-  <script src="js/scripts.js"></script>
+	<div id="wrapper">
+		<div id="top-header-container">
+			<div id="top-header">
+				<div id="nav-logo">
+					<a href="/"><img src="https://mylifecents.com/static/styles/images/landing/logo.png"></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Dashboard</a>
+						<li><a href="#">My Performance</a>
+						<li><a href="#">Contact</a>
+						<li><a href="#">Sign Out</a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<div id="profile">
+					<div class="container">
+						<h2>Welcome back!</h2>
+						<h3>Stephen Quenzer</h3>
+						<span id="profile-image"></span>
+					</div><!--end profile container-->
+				</div><!--end profile--><div id="message">
+					<div class="container">
+						<p>
+							Vivamus laoreet facilisis lobortis. Donec nunc ipsum, posuere ut eros quis, vulputate varius nibh. Nam porttitor diam quam, eget pellentesque urna porttitor eu. Quisque vitae lacus urna. Duis tincidunt auctor rutrum. Curabitur ultricies accumsan magna, at sagittis est tincidunt vel. Fusce et lobortis diam. 
+						</p>
+					</div><!--end message-container-->
+				</div><!--end message--><div id="performance-btn">
+					<div class="container">
+					</div><!--end performance-btn container-->
+				</div><!--end performance-btn-->
+			</div><!--end header container-->
+		</header>
+		<section id="main">
+			<h1>Wellness Plan</h1>
+			<div class="container">
+				<div id="wellness-plan">
+					<div id="in-progress">
+						<div class="header">
+							<h2>In Progress</h2>
+						</div><!--end in-progress header-->
+						<div class="body">
+						</div><!--end in-progress body-->
+					</div><!--end in-progress--><div id="start-new">
+						<div class="header">
+							<h2>Start New</h2>
+						</div><!--end header-->
+						<div class="body">
+						</div><!--end header body-->
+					</div><!--end start-new-->
+				</div><!--end wellness-plan-->
+				<div id="wellness-plan-sidebar">
+				<h3>Action Items</h3>
+				</div><!--end wellness-sidebar-->
+			</div><!--end container-->
+		</section><!--end main-->
+		<footer>
+		</footer>
+	</div><!--end wrapper-->
+  <script src="js/main.js"></script>
 </body>
 </html>
