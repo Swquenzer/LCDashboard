@@ -8,6 +8,7 @@
   <meta name="author" content="Stephen Quenzer">
 
   <script src="dist/jquery-1.11.1.min.js"></script>
+  <script src="dist/nanobar.min.js"></script>
   <link rel="stylesheet/less" type="text/css" href="css/default.less" />
   <script src="dist/less.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="/">Dashboard</a>
+						<li class="current"><a href="/">Dashboard</a>
 						<li><a href="#">My Performance</a>
 						<li><a href="#">Contact</a>
 						<li><a href="#">Sign Out</a>
@@ -38,13 +39,19 @@
 				<div id="profile">
 					<div class="container">
 						<h2>Welcome back!</h2>
-						<h3>Stephen Quenzer</h3>
-						<span id="profile-image"></span>
+						<h3><a href="#">Stephen Quenzer</a></h3>
+						<a href="#"><span id="profile-image"></span></a>
+						<!-- <div id="profile-stats">
+							<span><h2>Tasks</h2><h3>14</h3></span>
+							<span><h2>Goals</h2><h3>9</h3></span>
+							<span><h2>Badges</h2><h3>4</h3></span>
+							<span><h2>Rewards</h2><h3>2</h3></span>
+						</div><!--end profile-stats-->
 					</div><!--end profile container-->
 				</div><!--end profile--><div id="message">
 					<div class="container">
 						<p>
-							Vivamus laoreet facilisis lobortis. Donec nunc ipsum, posuere ut eros quis, vulputate varius nibh. Nam porttitor diam quam, eget pellentesque urna porttitor eu. Quisque vitae lacus urna. Duis tincidunt auctor rutrum. Curabitur ultricies accumsan magna, at sagittis est tincidunt vel. Fusce et lobortis diam. 
+							<strong>PRA Members:</strong> Vivamus laoreet facilisis lobortis. Donec nunc ipsum, posuere ut eros quis, vulputate varius nibh. Nam porttitor diam quam, eget pellentesque urna porttitor eu. Quisque vitae lacus urna. Duis tincidunt auctor rutrum. Curabitur ultricies accumsan magna, at sagittis est tincidunt vel. Fusce et lobortis diam. 
 						</p>
 					</div><!--end message-container-->
 				</div><!--end message--><div id="performance-btn">
@@ -62,21 +69,218 @@
 							<h2>In Progress</h2>
 						</div><!--end in-progress header-->
 						<div class="body">
+							<table class="wellness-items">
+								<tr id="newgoal-1">
+									<td><img class="icon-sml" src="images/Goal.png"></td>
+									<td>Learn: Alternative Financial Services</td><td>
+									</td>
+								</tr>
+								<tr id="newgoal-2">
+									<td><img class="icon-sml" src="images/Goal.png"></td>
+									<td>Credit-ability</td><td>
+									</td>
+								</tr>
+								<tr id="newgoal-3">
+									<td><img class="icon-sml" src="images/Goal.png"></td>
+									<td>About Me - Getting Started</td><td>
+									</td>
+								</tr>
+							</table><!--end wellness-items-->
 						</div><!--end in-progress body-->
 					</div><!--end in-progress--><div id="start-new">
 						<div class="header">
 							<h2>Start New</h2>
 						</div><!--end header-->
 						<div class="body">
+							<table class="wellness-items">
+								<tr id="newgoal-4">
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Learn: Credit-Ability</td><td>
+									</td>
+								</tr>
+								<tr id="newgoal-5">
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Earning "Interests"</td><td>
+									</td>
+								</tr>
+								<tr id="newgoal-6">
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Banking 101</td><td>
+									</td>
+								</tr>
+								<tr>
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Smart Spending</td><td id="newgoal-2">
+									</td>
+								</tr>
+								<tr>
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Saving Savvy</td><td id="newgoal-3">
+									</td>
+								</tr>
+								<tr>
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Earning "Interests"</td><td id="newgoal-2">
+									</td>
+								</tr>
+								<tr>
+									<td><img class="icon-sml" src="images/goal.png"></td>
+									<td>Borrowing Basics</td><td id="newgoal-3">
+									</td>
+								</tr>
+							</table><!--end wellness-items-->
 						</div><!--end header body-->
 					</div><!--end start-new-->
 				</div><!--end wellness-plan-->
 				<div id="wellness-plan-sidebar">
-				<h3>Action Items</h3>
+					<h3>&nbsp;</h3>
 				</div><!--end wellness-sidebar-->
+				<div class="sitemap">
+					<h3>Can't decide what to do next? Select an option below!</h3>
+					<div class="panel-wrapper">
+						<div class="hover panel">
+							<div class="front">
+							  <div class="pad">
+						      <h1>Complete Goals</h1>
+						      <p>
+						        (Click for more info!)
+						      </p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="pad">
+									<h2>You vs. World</h2>
+									<p class="half">16 Goals</p>
+									<strong>/</strong>
+									<p class="half">13 Goals</p>
+								</div>
+							</div>
+						</div><!--end panel-->
+						<div class="hover panel">
+							<div class="front">
+							  <div class="pad">
+						      <h1>Earn Badges</h1>
+						      <p>
+						        (Click for more info!)
+						      </p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="pad">
+									<h2>You vs. World</h2>
+									<p class="half">6 Badges</p>
+									<strong>/</strong>
+									<p class="half">4 Badges</p>
+								</div><!--end pad-->
+							</div><!--end back-->
+						</div><!--end panel-->
+						<div class="hover panel">
+							<div class="front">
+							  <div class="pad">
+						      <h1>Unlock Rewards</h1>
+						      <p>
+						        (Click for more info!)
+						      </p>
+								</div><!--end pad-->
+							</div><!--end front-->
+							<div class="back">
+								<div class="pad">
+									<h2>You vs. World</h2>
+									<p class="half">9 Rewards</p>
+									<strong>/</strong>
+									<p class="half">3 Rewards</p>
+								</div><!--end pad-->
+							</div><!--end back-->
+						</div><!--end panel-->
+						<div class="action-wrapper">
+							<div class="action panel">
+									<h1>Improve your score!</h1>
+							</div><!--end action panel-->
+						</div><!--end action-wrapper-->
+					</div><!--end panel-wrapper-->				
+				</div><!--end sitemap-->
 			</div><!--end container-->
 		</section><!--end main-->
+		<section id="bottom-content">
+			<div class="container">
+				<div class="badges">
+					<h1>All Badges</h1>
+					<div class="panel-wrapper">
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+					</div><!--end panel-wrapper-->
+				</div><!--end badges-->
+				<div class="rewards">
+				<h1>All Rewards</h1>
+					<div class="panel-wrapper">
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+						<div class="small panel">
+						</div><!--end small panel-->
+					</div><!--end panel-wrapper-->
+				</div><!--end rewards-->
+			</div><!--end container-->
+		</section><!--end bottom-content-->
 		<footer>
+			<h3>&copy; LifeCents 2014</h3>
 		</footer>
 	</div><!--end wrapper-->
   <script src="js/main.js"></script>
